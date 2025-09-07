@@ -1,0 +1,39 @@
+# Files to Keep
+- models/ (directory)
+  - __init__.py
+  - layers/ (directory)
+  - positional_encoding.py
+  - transformer_block.py
+  - llm.py
+- tokenizers/ (directory)
+  - __init__.py
+  - simple_tokenizer.py
+- utils/ (directory)
+  - __init__.py
+  - data_utils.py
+  - inference_utils.py
+- data/ (directory)
+  - raw/ (directory)
+  - processed/ (directory)
+- checkpoints/ (directory)
+- logs/ (directory)
+- download_wikitext.py
+- train_wikitext_refactored.py
+- generate.py
+- requirements.txt
+- run_all.sh
+- README.md
+
+# Files to Remove
+- data_preparation.py (replaced by utils/data_utils.py)
+- inference.py (replaced by utils/inference_utils.py)
+- llm_model.py (replaced by models/llm.py)
+- positional_encoding.py (moved to models/positional_encoding.py)
+- transformer_block.py (moved to models/transformer_block.py)
+- train.py (replaced by train_wikitext_refactored.py)
+- generate_text.py (replaced by generate.py)
+- prepare_wikitext.py (replaced by download_wikitext.py)
+- preprocess_wikitext.py (replaced by download_wikitext.py)
+- setup_and_train.sh (replaced by run_all.sh)
+- train_wikitext.py (replaced by train_wikitext_refactored.py)
+- train_with_wikitext.sh (replaced by run_all.sh)
